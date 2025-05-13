@@ -172,3 +172,21 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+# HTML template cache
+*.html~
+
+# Flask run logs
+*.log
+
+# VS Code settings
+.vscode/
+
+# Mac OS 임시파일
+.DS_Store
+
+# 프로젝트 내 테스트용 SQLite 파일
+*.sqlite3
+*.sqlite3-journal
+
+# 기타
+__pycache__/

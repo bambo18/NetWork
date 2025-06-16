@@ -1,0 +1,28 @@
+<!-- shared_templates/result.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>MBTI 결과</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body { font-family: Arial; margin: 40px; text-align: center; }
+    .result-box {
+      margin: auto;
+      padding: 30px;
+      border: 1px solid #aaa;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+    h2 { margin-bottom: 20px; }
+    .mbti { font-size: 32px; font-weight: bold; color: #444; }
+  </style>
+</head>
+<body>
+  <div class="result-box">
+    <h2>{{ name }}님의 성격 유형 결과</h2>
+    <div class="mbti">{{ mbti }}</div>
+    <p>당신은 <strong>{{ mbti }}</strong> 유형입니다.</p>
+  </div>
+</body>
+</html>

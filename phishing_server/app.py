@@ -39,4 +39,4 @@ def result():
     return render_template("result.html", name=name, mbti=fake_mbti)
 
 if __name__ == "__main__":
-    app.run(port=5001, debug=True)
+    app.run(host="0.0.0.0", port=5001, debug=True)

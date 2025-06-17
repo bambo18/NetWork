@@ -8,7 +8,8 @@ def save_user_data(name, email, real_mbti, fake_mbti):
     file_path = os.path.join(os.path.dirname(__file__), 'data', 'log.csv')
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
-    with open(file_path, mode='a', newline='', encoding='utf-8') as f:
+    with open(file_path, mode='a', newline='', encoding='cp949') as f:
+
         writer = csv.writer(f)
         writer.writerow([
             datetime.now().isoformat(),
